@@ -158,7 +158,7 @@ code_badge:
 defaults:
    home:
      heading: "괜찮아, 코딩이야"
-#     subheading: ""
+     subheading: "IOS, CS"
 #     banner: "Your image url"
 
 # Banner default settings
