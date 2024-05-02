@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 괜찮아, 코딩이야
+title: 👨🏻‍💻
 email: ryuhy.oh@gmail.com
 author: ryuhyoh
 
@@ -155,17 +155,17 @@ code_badge:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
+defaults:
+   home:
+     heading: "괜찮아, 코딩이야"
+#     subheading: ""
 #     banner: "Your image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
 # config it by the front matter for one specific post
 # banner:
-#   video: null             # Video banner source
+   video: null             # Video banner source
 #   loop: true              # Video loop
 #   volume: 0               # Video volume (100% is 1.0)
 #   start_at: 0             # Video start time
