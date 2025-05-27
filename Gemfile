@@ -31,3 +31,7 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Performance-booster for watching directories on Windows
 gem "wdm"
 gem "webrick", "~> 1.7"
+gem 'csv'
+gem 'logger'
+gem 'base64'
+gem 'bigdecimal'
