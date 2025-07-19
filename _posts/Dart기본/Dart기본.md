@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Dart 기본
-date:   2025-07-19 
+title: "Dart 기본"
+date: 2025-07-19 
 categories: [Dart, Flutter]
 ---
 
