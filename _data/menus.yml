@@ -10,6 +10,15 @@
   url: /about/
   external: false # set true if you using external link, see below
 
+- title: Tags     
+  url: /tags/      
+  external: false
+
+- title: Categories  
+  url: /categories/  
+  external: false
+
+
 # Example:
 # - title: github
 #   url: https://github.com/piharpi/jekyll-klise
