@@ -193,8 +193,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dcd1aa1647d92d8e",
+  "active": "a7444030646b2ebb",
   "lastOpenFiles": [
+    "categories.html",
+    "tags - 복사본.html",
     "_posts/무제.md",
     "_posts/2025-08-19-MVVM패턴.md",
     "template/template.md",
@@ -224,7 +226,6 @@
     "assets/img/saweria-button.png",
     "assets/img/ogp.png",
     "assets/css/style.scss",
-    "assets/search.json",
     "CONTRIBUTING.md",
     "CODE_OF_CONDUCT.md",
     "404.md",

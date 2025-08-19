@@ -1,0 +1,30 @@
+---
+layout: page
+title: Categories
+permalink: /categories/
+---
+
+<div class="category-list">
+  <h2>모든 카테고리</h2>
+  {% for category in site.categories %}
+    <a href="#{{ category[0] | slugify }}">{{ category[0] }} ({{ category[1].size }})</a>{% unless forloop.last %}, {% endunless %}
+  {% endfor %}
+</div>
+
+<hr>
+
+<div id="categories">
+  {% for category in site.categories %}
+    <div id="{{ category[0] | slugify }}">
+      <h3>#{{ category[0] }}</h3>
+      <ul>
+        {% for post in category[1] %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span style="font-size: 0.8em; color: #888;"> - {{ post.date | date: "%Y년 %m월 %d일" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>
