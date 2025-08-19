@@ -11,20 +11,6 @@
             "id": "dcd1aa1647d92d8e",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "ryuhyoh.github.io",
-                "bFile": "ryuhyoh.github.io",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: ryuhyoh.github.io"
-            }
-          },
-          {
-            "id": "642593f0273c3f7d",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "ryuhyoh.github.io/_posts/test.md",
@@ -35,8 +21,7 @@
               "title": "test"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -192,10 +177,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "642593f0273c3f7d",
+  "active": "dcd1aa1647d92d8e",
   "lastOpenFiles": [
-    "ryuhyoh.github.io/_posts/2025-08-01-심리검사앱.md",
     "ryuhyoh.github.io/_posts/test.md",
+    "ryuhyoh.github.io/_posts/2025-08-01-심리검사앱.md",
     "ryuhyoh.github.io/README.md",
     "ryuhyoh.github.io/thanks.md",
     "ryuhyoh.github.io/index.md",
