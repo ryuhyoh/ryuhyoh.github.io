@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-08-19-MVVM패턴.md",
+                "file": "_posts/2025-08-22-FutureBuilder.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-19-MVVM패턴"
+              "title": "2025-08-22-FutureBuilder"
             }
           },
           {
@@ -211,14 +211,14 @@
   },
   "active": "a7444030646b2ebb",
   "lastOpenFiles": [
-    "_posts/2025-08-22-FutureBuilder.md",
     "_posts/2025-08-22-builder란.md",
+    "_posts/2025-08-19-MVVM패턴.md",
+    "_posts/2025-08-22-FutureBuilder.md",
     "무제.md",
     "_posts/2025-08-01-심리검사앱.md",
     "메모/미디어팀 0819.md",
     "Excalidraw/Drawing 2025-08-19 19.35.32.excalidraw.md",
     "Excalidraw",
-    "_posts/2025-08-19-MVVM패턴.md",
     "메모",
     "categories.html",
     "tags - 복사본.html",

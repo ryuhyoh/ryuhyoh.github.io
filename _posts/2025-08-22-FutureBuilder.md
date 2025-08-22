@@ -51,11 +51,11 @@ return FutureBuilder(
 ```
 ##### FutureBuilder : 배송 추적기 
 
-1.어떤 물건을 기다릴지 알려준다. (`future: loadAsset()`)
+###### 1. 어떤 물건을 기다릴지 알려준다. (`future: loadAsset()`)
 	- `future` 속성에 json 데이터를 가져오는 `loadAsset()`연결 
 	- "내가 받을 물건은 `loadAsset()`이 가져올 json파일" 이라고 알려주는 셈
 
-2.배송 상태에 따라 다른 화면 보여줌 (`builder: (context, snapshot) {...})`
+###### 2. 배송 상태에 따라 다른 화면 보여줌 (`builder: (context, snapshot) {...})`
 	-  `builder`는 배송 상태가 바뀔 때마다 계속해서 호출됨. 
 	- `snapshot`이라는 **배송 상태 보고서**를 받아 현재 상태를 확인
 
@@ -77,16 +77,16 @@ return FutureBuilder(
 
 ##### `ConnectionState.done`(데이터 사용하기)
 
-1.`Map<String, dynamic> list = jsonDecode(snapshot.data!);`
+###### 1. `Map<String, dynamic> list = jsonDecode(snapshot.data!);`
 	- `snapshot.data!` : "배송 완료된 실제 물건" 즉, `loadAsset()`이 반환한 `list.json`파일의 **내용 전체가 담긴 문자열**
 	- `jsonDecode()` : 받아온 데이터는 그냥 긴 String 덩어리라 바로 사용하기 어렵다. Dart가 이해할 수 있는 `Map`형태로 변환 
 
-2.`return ListView,builder(...)` 
+###### 2. `return ListView,builder(...)` 
 	- `Map`으로 변환된 데이터를 사용해 화면에 목록을 표시 `ListView.builder`는 효율적으로 목록을 만들어주는 위젯 
 	- `itemCount: list['count']` : 목록에 표시할 아이템의 총 개수를 지정. `list.json`파일 안에 `count`라는 키가 있고, 그 값만큼 아이템을 만들겠다는 의미 
 	- `itemBuilder: (context, value) {...}` : 각 아이템이 어떻게 생겼을지를 정의하는 부분. `itemCount`만큼 반복해서 호출된다. `value`는 0,1,2 순으로 증가하는 인덱스. 
 
-3.**각 아이템 표시**
+###### 3. 각 아이템 표시
 	- `list['questions'][value]['title'].toString()` : 
 		- `list['questions']`: `Map`으로 변환된 데이터에서 'questions'라는 키에 해당하는 값을 가져온다. 
 		- `[value]` : 그 질문 목록에서 현재 인덱스(`value`)에 해당하는 하나의 질문 데이터를 가져옴 
