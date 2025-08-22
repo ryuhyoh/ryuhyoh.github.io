@@ -59,7 +59,7 @@ return FutureBuilder(
 	-  `builder`는 배송 상태가 바뀔 때마다 계속해서 호출됨. 
 	- `snapshot`이라는 **배송 상태 보고서**를 받아 현재 상태를 확인
 
----
+
 ##### snapshot (배송 상태 보고서) 
 `snapshot`객체 안에는 `connectionState`라는 현재 상태 정보가 들어있다. 이 상태에 따라 `switch`문으로 분기 처리 
 
@@ -74,7 +74,7 @@ return FutureBuilder(
 - `case ConnectionState.done:`
 	- **의미** : 데이터를 성공적으로 다 불러온 상태
 	- **동작** : 도착한 데이터를 사용해서 화면을 꾸밈(렌더링)
----
+
 ##### `ConnectionState.done`(데이터 사용하기)
 
 1. `Map<String, dynamic> list = jsonDecode(snapshot.data!);`
