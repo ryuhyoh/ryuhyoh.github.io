@@ -51,12 +51,12 @@ return FutureBuilder(
 ```
 ##### FutureBuilder : 배송 추적기 
 
-1. 어떤 물건을 기다릴지 알려준다. (`future: loadAsset())
+1. 어떤 물건을 기다릴지 알려준다. (`future: loadAsset()`)
 	- `future` 속성에 json 데이터를 가져오는 `loadAsset()`연결 
 	- "내가 받을 물건은 `loadAsset()`이 가져올 json파일" 이라고 알려주는 셈
 
-2. 배송 상태에 따라 다른 화면 보여줌 (`builder: (context, snapshot) {...})
-	- `builder`는 배송 상태가 바뀔 때마다 계속해서 호출됨. 
+2. 배송 상태에 따라 다른 화면 보여줌 (`builder: (context, snapshot) {...})`
+	-  `builder`는 배송 상태가 바뀔 때마다 계속해서 호출됨. 
 	- `snapshot`이라는 *배송 상태 보고서*를 받아 현재 상태를 확인
 ---
 ##### snapshot (배송 상태 보고서) 
