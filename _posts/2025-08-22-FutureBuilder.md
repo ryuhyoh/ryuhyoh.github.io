@@ -61,24 +61,30 @@ return FutureBuilder(
 ---
 ##### snapshot (배송 상태 보고서) 
 `snapshot`객체 안에는 `connectionState`라는 현재 상태 정보가 들어있다. 이 상태에 따라 `switch`문으로 분기 처리 
-- `case ConnectionState.waiting: / case ConnectionState.active:`
+
+- `case ConnectionState.waiting:` / `case ConnectionState.active:`
 	- **의미** : 데이터를 불러오는 중 
-	- **동작** : 화면 중앙에 `CircularProgressIndicator()` 렌더링 
+	- **동작** : 화면 중앙에 `CircularProgressIndicator()` 렌더링
+
 - `case ConnectionState.none:`
 	- **의미** : "아직 배송이 시작되지 않음" 즉 비동기 작업이 아직 시작 안됨. 
-	- **동작** : 화면 중앙에 'No data' 렌더링 
+	- **동작** : 화면 중앙에 'No data' 렌더링
+
 - `case ConnectionState.done:`
 	- **의미** : 데이터를 성공적으로 다 불러온 상태
 	- **동작** : 도착한 데이터를 사용해서 화면을 꾸밈(렌더링)
 ---
 ##### `ConnectionState.done`(데이터 사용하기)
+
 1. `Map<String, dynamic> list = jsonDecode(snapshot.data!);`
 	- `snapshot.data!` : "배송 완료된 실제 물건" 즉, `loadAsset()`이 반환한 `list.json`파일의 **내용 전체가 담긴 문자열**
 	- `jsonDecode()` : 받아온 데이터는 그냥 긴 String 덩어리라 바로 사용하기 어렵다. Dart가 이해할 수 있는 `Map`형태로 변환 
+
 2. `return ListView,builder(...)` 
 	- `Map`으로 변환된 데이터를 사용해 화면에 목록을 표시 `ListView.builder`는 효율적으로 목록을 만들어주는 위젯 
 	- `itemCount: list['count']` : 목록에 표시할 아이템의 총 개수를 지정. `list.json`파일 안에 `count`라는 키가 있고, 그 값만큼 아이템을 만들겠다는 의미 
 	- `itemBuilder: (context, value) {...}` : 각 아이템이 어떻게 생겼을지를 정의하는 부분. `itemCount`만큼 반복해서 호출된다. `value`는 0,1,2 순으로 증가하는 인덱스. 
+
 3. **각 아이템 표시**
 	- `list['questions'][value]['title'].toString()` : 
 		- `list['questions']`: `Map`으로 변환된 데이터에서 'questions'라는 키에 해당하는 값을 가져온다. 
