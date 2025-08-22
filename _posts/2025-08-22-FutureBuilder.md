@@ -57,7 +57,8 @@ return FutureBuilder(
 
 2. 배송 상태에 따라 다른 화면 보여줌 (`builder: (context, snapshot) {...})`
 	-  `builder`는 배송 상태가 바뀔 때마다 계속해서 호출됨. 
-	- `snapshot`이라는 *배송 상태 보고서*를 받아 현재 상태를 확인
+	- `snapshot`이라는 **배송 상태 보고서**를 받아 현재 상태를 확인
+
 ---
 ##### snapshot (배송 상태 보고서) 
 `snapshot`객체 안에는 `connectionState`라는 현재 상태 정보가 들어있다. 이 상태에 따라 `switch`문으로 분기 처리 
