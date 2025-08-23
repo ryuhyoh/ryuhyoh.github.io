@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/SizedBox로 감싼 이유.md",
+                "file": "_posts/2025-08-23-SizedBox로 감싼 이유.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SizedBox로 감싼 이유"
+              "title": "2025-08-23-SizedBox로 감싼 이유"
             }
           },
           {
@@ -209,10 +209,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "eb300435d35071a8",
+  "active": "a7444030646b2ebb",
   "lastOpenFiles": [
     "_posts/2025-08-23-InkWell.md",
-    "_posts/SizedBox로 감싼 이유.md",
+    "_posts/2025-08-23-SizedBox로 감싼 이유.md",
     "_posts/2025-08-22-FutureBuilder.md",
     "_posts/2025-08-22-builder란.md",
     "_posts/2025-08-19-MVVM패턴.md",
